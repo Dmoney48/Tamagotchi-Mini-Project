@@ -97,14 +97,14 @@ const tamaGame = {
    lightsOn(){
        lightStatus = !lightStatus;
        if(lightStatus){
-        //set background to light
+        document.querySelector(`.bg-img`).src = `img/bg-day.gif`;
        }
        else{
-           //change background to night
+            document.querySelector(`.bg-img`).src = `img/bg-night.gif`;
             tamaPet.sleepyPet();
-            const boredID = document.querySelector('#Bored');
+            const sleepyID = document.querySelector('#Sleepy');
             console.log(tamaPet.sleepiness);
-            boredID.innerHTML = `Boredom: ${tamaPet.sleepiness}`;
+            sleepyID.innerHTML = `Sleepiness: ${tamaPet.sleepiness}`;
        }
        //Do logic to change the sleepy pts adding counter
    },
@@ -115,19 +115,19 @@ const tamaGame = {
         ageID.innerHTML = `Age: ${tamaPet.age}`;
         tamaPet.age++
 
-        if(tamaPet.age == 4){
+        if(tamaPet.age == 2){
           window.confirm(`Egg-${tamaPet.name} is evolving!`);
           document.querySelector(`#Sprite`).src = 'img/yoshi.png';
           alert(`Egg-${tamaPet.name} is now Yoshi-${tamaPet.name}`);
         }
 
-        if(tamaPet.age == 12){
+        if(tamaPet.age == 8){
             window.confirm(`Yoshi-${this.name} is evolving!`);
             document.querySelector(`#Sprite`).src = `img/godzilla.png`;
             alert(`Yoshi-${tamaPet.name} is now ${tamaPet.name}-Godzilla!`);
 
         }
-      }, 15000)},
+      }, 10000)},
     
       setName () {
         tamaPet.name = prompt(`What is your pet's name?`,"Enter Name")
