@@ -159,6 +159,8 @@ startButton.addEventListener("click", (event)=>{
     tamaGame.lightsOn();
   })
 
+  console.log(tamaPet);
+
 //Made pet and can name it. Values for HUNGER,SLEEPY, BORED are set!
 // hunger decreases but dies at 2
 // also buttons to ... w/ return prompts
