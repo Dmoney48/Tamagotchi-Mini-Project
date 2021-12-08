@@ -5,4 +5,4 @@ This is my mini project tamagotchi game!
 HTML5, CSS3, JavaScript
 
 ## Link to Site
-Dez-Tamagotchi(https://dmoney48.github.io/Dez_Tamogatchi/)
+Dez-Tamagotchi(https://dmoney48.github.io/Tamagotchi-Mini-Project/)
