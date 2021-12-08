@@ -23,7 +23,7 @@ class Tamagotchi extends Pet {
         this.hunger++
     }
     sleepyPet(){
-        this.sleepiness = this.sleepiness - 5;
+        this.sleepiness = this.sleepiness - 3;
     }
     beBored(){
         this.boredom--
@@ -122,7 +122,7 @@ const tamaGame = {
         }
 
         if(tamaPet.age == 8){
-            window.confirm(`Yoshi-${this.name} is evolving!`);
+            window.confirm(`Yoshi-${tamaPet.name} is evolving!`);
             document.querySelector(`#Sprite`).src = `img/godzilla.png`;
             alert(`Yoshi-${tamaPet.name} is now ${tamaPet.name}-Godzilla!`);
 
