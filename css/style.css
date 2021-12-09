@@ -6,6 +6,16 @@ body{
   background-repeat: no-repeat;
 }
 
+@keyframes slidein {
+  from {left: 40%;}
+  to {left: 48%;}
+}
+
+@keyframes bounce {
+  from {top: 55%};
+  to {bottom:48%};
+}
+
 #Sprite{
   /* object-fit: scale-down; */
   /* object-position: center; */
@@ -15,7 +25,15 @@ body{
   width: auto;
   top: 55%;
   left: 45%;
+  animation-name:  slidein, bounce;
+  animation-duration: 3s, 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
 }
+
+
+
 #bg-day {
   width: 100%;
   height: auto;
